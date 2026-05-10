@@ -5,20 +5,20 @@
 class ClaudeSwitch < Formula
   desc "Wrapper that drives multiple Claude CLI sessions remotely over WebSocket."
   homepage "https://github.com/jleal52/claude-switch"
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.3/claude-switch_0.3.3_darwin_amd64.tar.gz"
-      sha256 "30804c56577c9b48ba0a2942fffa00914b07da3d13cb8c95784a2c438c2a9960"
+      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.4/claude-switch_0.3.4_darwin_amd64.tar.gz"
+      sha256 "fc69141933545a00ec838e4ca81aefe788cbf36ee769c1ed57027d460a4f68a5"
 
       define_method(:install) do
         bin.install "claude-switch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.3/claude-switch_0.3.3_darwin_arm64.tar.gz"
-      sha256 "45fdf6a520ffeafa15d8ae2847268f777bf83b6207e9ce814f5cce867309220e"
+      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.4/claude-switch_0.3.4_darwin_arm64.tar.gz"
+      sha256 "b455d5f408872c7b1f0a4324beb45fcdaaa8ac1c49eb287680d0fc3d19104b9c"
 
       define_method(:install) do
         bin.install "claude-switch"
@@ -28,15 +28,15 @@ class ClaudeSwitch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.3/claude-switch_0.3.3_linux_amd64.tar.gz"
-      sha256 "16ff282171b0e376f3aa6a2000289664af178effe9f8345d2e566cd4c4c31c07"
+      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.4/claude-switch_0.3.4_linux_amd64.tar.gz"
+      sha256 "2b16ff873cd95b6fd1be97ddd278a2ff05692ec308e22a781b487e33150c2a68"
       define_method(:install) do
         bin.install "claude-switch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.3/claude-switch_0.3.3_linux_arm64.tar.gz"
-      sha256 "60f5a8181766309764026d2f9f112eb0ad19250ccf7087fa3e5e32c9d3d9bd12"
+      url "https://github.com/jleal52/claude-switch/releases/download/v0.3.4/claude-switch_0.3.4_linux_arm64.tar.gz"
+      sha256 "ed27ee4a28251e0672f45523c536f7e480ff07a9fc5c96ae022b1f68bbc8d279"
       define_method(:install) do
         bin.install "claude-switch"
       end
